@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+body {
+    width: min(60vw, 650px);
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+form div {
+    flex: 1 1 auto;
+}
+
+.invisible {
+    display: none;
+}
+
+label {
+    display: block;
+}
+
+input, select {
+    box-sizing: border-box;
+    height: 2rem;
+}
+
+input {
+    width: 100%;
+}
+
+button#addBook, button#openForm {
+    margin-top: 10px;
+    height: 2rem;
+    align-self: flex-end;
+}
+
+button#openForm {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    margin-top: 3rem;
+    border-collapse: collapse;
+    
+}
+
+td, tr, th {
+    padding: .3rem .3rem;
+}
+
+thead {
+    font-weight: 500;
+}
+
+tbody td:nth-child(4) {
+    text-align: center;
+}
+tbody td:nth-child(3) > div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: rgb(245, 245, 245);
+}
+
+.checkbox {
+    width: auto;
+}
+
+.titleCol {
+    width: 33%;
+}
+.statusCol {
+    width: 20%;
+}
+.title {
+    font-style: italic;
+}
+
+
+@media (max-width: 850px) {
+    body {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 90vw;
+    }
+}
