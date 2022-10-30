@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Book Library</title>
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -17,25 +17,23 @@
     <button id="openForm">Add a book</button>
     <form class="invisible">
         <div>
-        <label for="bookTitle">Title:</label>
-        <input type="text" id="bookTitle" required>
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle" required>
         </div>
         <div>
-        <label for="bookAuthor">Author:</label>
-        <input type="text" id="bookAuthor" required>
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" required>
         </div>
         <div>
-        <label for="status">Status</label>
-        <select id="status">
-            <option value="1">Read</option>
-            <option value="0">Not read</option>
-        </select>
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="1">Read</option>
+                <option value="0">Not read</option>
+            </select>
         </div>
         <button id="addBook" type="submit">Add</button>
     </form>
     
-    
-
     <table>
         <colgroup>
             <col span="2" class="titleCol">
@@ -43,16 +41,14 @@
             <col>
         </colgroup>
         <thead>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Status</th>
-            <th>&nbsp</th>
-        </tr>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>&nbsp</th>
+            </tr>
         </thead>
-        <tbody>
-           
-        </tbody>
+        <tbody></tbody>
     </table>
 </body>
 </html>
